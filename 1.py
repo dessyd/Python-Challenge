@@ -2,10 +2,10 @@ riddle = "g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. b
 answer = ""
 
 for c in riddle:
-  pos = ord(c)
-  if c.isalpha():
-    pos = (ord(c)+2-ord("a"))%26 + ord("a")
+    pos = ord(c)
+    if c.isalpha():
+        pos = (ord(c)+2-ord("a")) % 26 + ord("a")
 
-  answer += chr(pos)
+    answer += chr(pos)
 
 print(answer)
